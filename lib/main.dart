@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    const MyApp()
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -22,12 +20,27 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Olá Mundo!'),
-      ),
-      drawer: Drawer(),
-    );
+    return const Scaffold(
+        backgroundColor: Colors.black,
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Pode Entrar!',
+              style: TextStyle(
+                fontSize: 30,
+                color: Colors.white,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            Text(
+              '0',
+              style: TextStyle(
+                fontSize: 100,
+                color: Colors.white,
+              ),
+            )
+          ],
+        ));
   }
 }
-
