@@ -22,10 +22,11 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.black,
-      alignment: Alignment.center,
-      child: const Text('Olá Mundo!'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Olá Mundo!'),
+      ),
+      drawer: Drawer(),
     );
   }
 }
